@@ -1,0 +1,28 @@
+/*
+*   ==================================================
+*   Mixins Stylesheet
+*   ==================================================
+*/
+
+
+
+/*
+*   =========================
+*   Breakpoint
+*   =========================
+*/
+$breakpoints: S $bp-s, M $bp-m, L $bp-l;
+
+@mixin bp($bp) {
+    @each $breakpoint in $breakpoints {
+        @if $bp == nth($breakpoint, 1) {
+            @media (min-width: nth($breakpoint, 2)) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin for-phone-only {
+    @media (max-width: $bp-s) { @content; }
+}

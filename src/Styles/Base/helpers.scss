@@ -1,0 +1,91 @@
+/*
+*   ==================================================
+*   Helpers Stylesheet
+*   ==================================================
+*/
+
+
+
+/*
+*   =========================
+*   Containers
+*   =========================
+*/
+.container {
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 1200px;
+
+    > .inner {
+        display: flex;
+        gap: 1rem;
+
+        width: 100%;
+        
+        > .left, > .right {
+            flex: 1;
+    
+            // padding: 1rem;
+    
+            &.lg {
+                flex: 2;
+            }
+    
+            &.xl {
+                flex: 3;
+            }
+    
+            &.xxl {
+                flex: 4;
+            }
+        }
+        
+        @include for-phone-only {
+            flex-direction: column;
+        }
+    }
+}
+
+
+
+/*
+*   =========================
+*   Background Colors
+*   =========================
+*/
+.bg-black {
+    color: $color-white;
+
+    background-color: $color-black;
+}
+
+.bg-grey {
+    background-color: $color-grey-1;
+}
+
+
+
+/*
+*   =========================
+*   Text Align
+*   =========================
+*/
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+
+/*
+*   =========================
+*   Spacing
+*   =========================
+*/
+.mb-1 {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,51 @@
+/*
+*   ==================================================
+*   Header Stylesheet
+*   <header />
+*   ==================================================
+*/
+
+
+
+/*
+*   =========================
+*   Container
+*   =========================
+*/
+header {
+    padding: $spacing;
+}
+
+
+
+/*
+*   =========================
+*   Mobile Menu
+*   =========================
+*/
+header .container {
+    display: flex;
+    align-items: center;
+
+    .burger-menu {
+        width: 32px;
+        height: 32px;
+
+        background-color: red;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+
+        width: 100px;
+        height: 40px;
+
+        background-color: green;
+        transform: translateX(-50%);
+    }
+}
+
+header .dropdown-menu {
+    display: none;
+}

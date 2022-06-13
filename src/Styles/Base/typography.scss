@@ -1,0 +1,56 @@
+/*
+*   ==================================================
+*   Typography Stylesheet
+*   ==================================================
+*/
+
+
+
+/*
+*   =========================
+*   Headings
+*   =========================
+*/
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+
+/*
+*   =========================
+*   Body Text
+*   =========================
+*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+p {
+    margin-top: 0;
+}
+
+
+
+/*
+*   =========================
+*   Links
+*   =========================
+*/
+a {
+    color: $color-primary;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
