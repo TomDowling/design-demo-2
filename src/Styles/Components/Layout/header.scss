@@ -13,7 +13,7 @@
 *   =========================
 */
 header {
-    padding: $spacing;
+    // padding: $spacing;
 }
 
 
@@ -26,26 +26,96 @@ header {
 header .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
-    .burger-menu {
-        width: 32px;
-        height: 32px;
+    .burger-menu, .notifications {
+        padding: $spacing;
 
-        background-color: red;
+        width: 2rem;
+        height: 2rem;
+
+        background-image: url(../../../../public/assets/menu.svg);
+        background-size: 2rem;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .logo {
-        position: absolute;
-        left: 50%;
+        width: 7rem;
+        height: 2.5rem;
 
-        width: 100px;
-        height: 40px;
+        background-image: url(../../../../public/assets/logo.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-        background-color: green;
-        transform: translateX(-50%);
+    .notifications {
+        position: relative;
+
+        background-image: url(../../../../public/assets/bell.svg);
+        background-size: 1.8rem;
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+
+            width: 0.5rem;
+            height: 0.5rem;
+
+            background-color: $color-primary;
+            border: 2px solid $color-white;
+            border-radius: 1rem;
+        }
     }
 }
 
 header .dropdown-menu {
-    display: none;
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+    
+    background-color: white;
+
+    li {
+        padding: $spacing;
+
+        color: $color-primary;
+        font-weight: 600;
+
+        &.spacer {
+            padding: 0;
+            margin: $spacing-sm $spacing;
+
+            height: 2px;
+
+            background-color: $color-grey-1;
+            border-radius: 1rem;
+        }
+
+        &.login {
+            color: $color-white;
+
+            background-color: $color-primary;
+        }
+    }
+
+    &.hide {
+        display: none;
+    }
+}
+
+
+
+/*
+*   =========================
+*   Desktop Overrides
+*   =========================
+*/
+header .container {
+
 }
