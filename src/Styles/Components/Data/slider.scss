@@ -1,0 +1,118 @@
+/*
+*   ==================================================
+*   Data / Slider Stylesheet
+*   .slider
+*   ==================================================
+*/
+
+
+
+/*
+*   =========================
+*   Slider
+*   =========================
+*/
+.slider {
+    position: relative;
+
+    padding: calc($spacing * 2) calc($spacing * 5);
+
+    overflow: hidden;
+
+    .inner {
+        position: relative;
+
+        display: flex;
+        gap: $spacing;
+
+        z-index: 1;
+    }
+
+    .item {
+        width: 25%;
+        height: 12.5rem;
+
+        background-color: $color-grey-1;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0.25rem;
+
+        cursor: pointer;
+        transition: transform 200ms ease 500ms;
+
+        &:hover {
+            transform: scale(1.25) !important;
+        }
+    }
+}
+
+
+
+.slider {
+    .prev-items, .next-items {
+        position: absolute;
+
+        top: 0;
+        left: -5rem;
+        width: 5rem;
+        height: 12.5rem;
+
+        // background-color: rgba($color-grey-1, 0.2);
+        background-image: url(../../../../public/assets/chevron.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        cursor: pointer;
+    }
+
+    .prev-items {
+        transform: rotate(180deg);
+    }
+
+    .next-items {
+        left: auto;
+        right: -5rem;
+    }
+}
+
+
+
+/*
+*   =========================
+*   TEMP
+*   =========================
+*/
+// .slider {
+//     display: flex;
+//     padding: $spacing;
+
+//     overflow-y: auto;
+
+//     &:hover .item {
+//         transform: translateX(-25%);
+//     }
+
+//     .item {
+//         background: green;
+//         flex: 0 0 10rem;
+//         text-align: center;
+//         margin: 0 2px;
+//         transition: transform 300ms ease 100ms;
+
+//         img {
+//             height: 100%;
+//             width: 100%;
+//             vertical-align: top;
+//         }
+
+//         &:hover {
+//             transform: scale(1.5) !important;
+//         }
+
+//         &:hover ~ .item {
+//             transform: translateX(25%);
+//         }
+//     }
+// }

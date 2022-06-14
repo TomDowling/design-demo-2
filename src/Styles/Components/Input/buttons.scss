@@ -1,0 +1,44 @@
+/*
+*   ==================================================
+*   Input / Buttons Stylesheet
+*   .btn
+*   ==================================================
+*/
+
+
+
+/*
+*   =========================
+*   Default
+*   =========================
+*/
+.btn {
+    padding: $spacing;
+    
+    width: fit-content;
+    min-width: 10rem;
+
+    color: $color-black;
+    font-weight: 600;
+    text-align: center;
+
+    background-color: $color-grey-1;
+    border: 2px solid $color-grey-1;
+    border-radius: 2rem;
+
+    cursor: pointer;
+}
+
+
+
+/*
+*   =========================
+*   Primary
+*   =========================
+*/
+.btn.btn-primary {
+    color: $color-white;
+
+    background-color: $color-primary;
+    border-color: $color-primary;
+}

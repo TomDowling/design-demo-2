@@ -1,6 +1,6 @@
 /*
 *   ==================================================
-*   Header Stylesheet
+*   Layout / Header Stylesheet
 *   <header />
 *   ==================================================
 */
@@ -13,7 +13,10 @@
 *   =========================
 */
 header {
-    // padding: $spacing;
+    position: absolute;
+    left: 0;
+
+    width: 100%;
 }
 
 
@@ -102,10 +105,6 @@ header .dropdown-menu {
 
             background-color: $color-primary;
         }
-    }
-
-    &.hide {
-        display: none;
     }
 }
 
