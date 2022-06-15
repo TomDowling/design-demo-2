@@ -20,9 +20,17 @@ body {
 *   =========================
 */
 section {
-    padding: 1rem;
+    .section-title {
+        position: relative;
+        
+        font-size: 2rem;
+        
+        & + .section-body {
+            margin-top: $spacing;
+        }
+    }
 
-    @mixin bp($bp-m) {
-        padding: 100px 2rem;
+    .section-body {
+        position: relative;
     }
 }

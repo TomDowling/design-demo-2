@@ -1,0 +1,49 @@
+/*
+*   ==================================================
+*   Data / Highlighted Item Stylesheet
+*   .highlighted-item
+*   ==================================================
+*/
+
+
+
+/*
+*   =========================
+*   Container
+*   =========================
+*/
+.highlighted-item {
+    margin-bottom: -50vh;
+
+    height: 100vh;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    .container {
+        position: relative;
+        top: 20%;
+
+        margin: 0;
+
+        max-width: 500px;
+
+        .item-title {
+            font-size: 3rem;
+
+            & + .item-desc {
+                margin-top: $spacing;
+            }
+        }
+
+        .item-desc {
+            font-size: 1.2rem;
+
+            & + .btn {
+                margin-top: $spacing;
+            }
+        }
+    }
+}
