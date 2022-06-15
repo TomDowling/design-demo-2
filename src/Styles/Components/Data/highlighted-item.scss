@@ -16,11 +16,12 @@
     margin-bottom: -50vh;
 
     height: 100vh;
-
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
+    transition: transform 0.5s linear;
+    -webkit-transition: -webkit-transform 0.5s linear;
 
     .container {
         position: relative;

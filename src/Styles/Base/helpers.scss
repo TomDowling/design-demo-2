@@ -46,6 +46,12 @@
             flex-direction: column;
         }
     }
+
+    @include for-phone-only {
+        padding: 0 $spacing;
+
+        width: calc(100% - ($spacing * 2));
+    }
 }
 
 
@@ -99,5 +105,21 @@
 *   =========================
 */
 .hide {
+    display: none !important;
+}
+
+.mobile-only {
     display: none;
+    
+    @include for-phone-only {
+        display: flex;
+    }
+}
+
+.desktop-only {
+    display: none;
+    
+    @include for-desktop-up {
+        display: flex;
+    }
 }

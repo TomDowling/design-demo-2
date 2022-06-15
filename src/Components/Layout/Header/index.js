@@ -14,9 +14,17 @@ export function Header() {
         <header>
             <div className="container">
                 <div
-                    className="burger-menu"
+                    className="burger-menu mobile-only"
                     onClick={toggleDropdown}
                 />
+
+                <ul
+                    className="main-menu desktop-only"
+                >
+                    <li>Movies</li>
+                    <li>Tv Shows</li>
+                    <li>Directories</li>
+                </ul>
 
                 <div
                     className="logo"
@@ -29,7 +37,7 @@ export function Header() {
                 />
             </div>
 
-            <ul className={`dropdown-menu ${showDropdown ? "" : "hide"}`}>
+            <ul className={`dropdown-menu mobile-only ${showDropdown ? "" : "hide"}`}>
                 <li>Movies</li>
                 <li>Tv Shows</li>
                 <li>Directories</li>

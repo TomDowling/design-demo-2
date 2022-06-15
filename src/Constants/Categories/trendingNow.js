@@ -1,68 +1,35 @@
 const trendingNow =  [
     {
         name: "Jurassic World: Dominion",
-        image: "https://static2.srcdn.com/wordpress/wp-content/uploads/2022/05/Jurassic-World-Dominion-Character-Poster-for-Chris-Pratt-as-Owen-Grady-Header.jpg",
-        trailer: "../assets/movies/jurassic-world.mp4" 
+        image: "/assets/movies/jurassic-world.jpg"
     },
     {
-        name: "Jurassic World: Dominion 2",
-        image: "https://static2.srcdn.com/wordpress/wp-content/uploads/2022/05/Jurassic-World-Dominion-Character-Poster-for-Chris-Pratt-as-Owen-Grady-Header.jpg",
-        trailer: "https://www.youtube.com/watch?v=fb5ELWi-ekk" 
+        name: "Rampage",
+        image: "/assets/movies/rampage.jpg"
     },
     {
-        name: "Jurassic World: Dominion",
-        image: "https://static2.srcdn.com/wordpress/wp-content/uploads/2022/05/Jurassic-World-Dominion-Character-Poster-for-Chris-Pratt-as-Owen-Grady-Header.jpg",
-        trailer: "https://www.youtube.com/watch?v=fb5ELWi-ekk" 
+        name: "Aladdin",
+        image: "/assets/movies/aladdin.jpg"
     },
     {
-        name: "Jurassic World: Dominion",
-        image: "https://static2.srcdn.com/wordpress/wp-content/uploads/2022/05/Jurassic-World-Dominion-Character-Poster-for-Chris-Pratt-as-Owen-Grady-Header.jpg",
-        trailer: "https://www.youtube.com/watch?v=fb5ELWi-ekk" 
+        name: "Extraction",
+        image: "/assets/movies/extraction.jpg"
     },
     {
-        name: "Jurassic World: Dominion",
-        image: "https://static2.srcdn.com/wordpress/wp-content/uploads/2022/05/Jurassic-World-Dominion-Character-Poster-for-Chris-Pratt-as-Owen-Grady-Header.jpg",
-        trailer: "https://www.youtube.com/watch?v=fb5ELWi-ekk" 
+        name: "Venom",
+        image: "/assets/movies/venom.jpg"
     },
     {
-        name: "Jurassic World: Dominion",
-        image: "https://static2.srcdn.com/wordpress/wp-content/uploads/2022/05/Jurassic-World-Dominion-Character-Poster-for-Chris-Pratt-as-Owen-Grady-Header.jpg",
-        trailer: "https://www.youtube.com/watch?v=fb5ELWi-ekk" 
+        name: "Tomb Raider",
+        image: "/assets/movies/tomb-raider.jpg"
     },
     {
-        name: "Jurassic World: Dominion",
-        image: "https://static2.srcdn.com/wordpress/wp-content/uploads/2022/05/Jurassic-World-Dominion-Character-Poster-for-Chris-Pratt-as-Owen-Grady-Header.jpg",
-        trailer: "https://www.youtube.com/watch?v=fb5ELWi-ekk" 
+        name: "Robin",
+        image: "/assets/movies/robin.jpg"
     },
     {
-        name: "Jurassic World: Dominion",
-        image: "https://static2.srcdn.com/wordpress/wp-content/uploads/2022/05/Jurassic-World-Dominion-Character-Poster-for-Chris-Pratt-as-Owen-Grady-Header.jpg",
-        trailer: "https://www.youtube.com/watch?v=fb5ELWi-ekk" 
-    },
-    {
-        name: "Jurassic World: Dominion",
-        image: "https://static2.srcdn.com/wordpress/wp-content/uploads/2022/05/Jurassic-World-Dominion-Character-Poster-for-Chris-Pratt-as-Owen-Grady-Header.jpg",
-        trailer: "https://www.youtube.com/watch?v=fb5ELWi-ekk" 
-    },
-    {
-        name: "Jurassic World: Dominion",
-        image: "https://static2.srcdn.com/wordpress/wp-content/uploads/2022/05/Jurassic-World-Dominion-Character-Poster-for-Chris-Pratt-as-Owen-Grady-Header.jpg",
-        trailer: "https://www.youtube.com/watch?v=fb5ELWi-ekk" 
-    },
-    {
-        name: "Jurassic World: Dominion",
-        image: "https://static2.srcdn.com/wordpress/wp-content/uploads/2022/05/Jurassic-World-Dominion-Character-Poster-for-Chris-Pratt-as-Owen-Grady-Header.jpg",
-        trailer: "https://www.youtube.com/watch?v=fb5ELWi-ekk" 
-    },
-    {
-        name: "Jurassic World: Dominion",
-        image: "https://static2.srcdn.com/wordpress/wp-content/uploads/2022/05/Jurassic-World-Dominion-Character-Poster-for-Chris-Pratt-as-Owen-Grady-Header.jpg",
-        trailer: "https://www.youtube.com/watch?v=fb5ELWi-ekk" 
-    },
-    {
-        name: "Jurassic World: Dominion",
-        image: "https://static2.srcdn.com/wordpress/wp-content/uploads/2022/05/Jurassic-World-Dominion-Character-Poster-for-Chris-Pratt-as-Owen-Grady-Header.jpg",
-        trailer: "https://www.youtube.com/watch?v=fb5ELWi-ekk" 
+        name: "Uncharted",
+        image: "/assets/movies/uncharted.jpg"
     }
 ]
 
