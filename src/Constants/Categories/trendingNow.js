@@ -1,11 +1,11 @@
 const trendingNow =  [
     {
-        name: "Jurassic World: Dominion",
-        image: "/assets/movies/jurassic-world.jpg"
-    },
-    {
         name: "Rampage",
         image: "/assets/movies/rampage.jpg"
+    },
+    {
+        name: "Jurassic World: Dominion",
+        image: "/assets/movies/jurassic-world.jpg"
     },
     {
         name: "Aladdin",

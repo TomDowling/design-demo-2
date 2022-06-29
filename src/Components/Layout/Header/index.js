@@ -3,11 +3,18 @@ import React, { useEffect, useState } from "react";
 
 
 /*  RENDER  */
-export function Header() {
+export function Header(props) {
+    const {
+        setFilters
+    } = props;
     const [showDropdown, setShowDropdown] = useState(false);
 
     const toggleDropdown = () => {
         setShowDropdown((prevCheck) => !prevCheck)
+    }
+
+    const changeFilter = (newValue) => {
+        setFilters(newValue)
     }
 
     return (
@@ -21,9 +28,9 @@ export function Header() {
                 <ul
                     className="main-menu desktop-only"
                 >
-                    <li>Movies</li>
-                    <li>Tv Shows</li>
-                    <li>Directories</li>
+                    <li onClick={() => changeFilter("movies")}>Movies</li>
+                    <li onClick={() => changeFilter("tv")}>Tv Shows</li>
+                    <li onClick={() => changeFilter("default")}>Directories</li>
                 </ul>
 
                 <div

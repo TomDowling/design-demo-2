@@ -2,9 +2,13 @@ import React, { useEffect, useState } from "react";
 
 /*  Components  */
 import {
+    Desktop,
     Header,
     HighlightedItem,
-    Slider
+    Mobile,
+    Responsive,
+    Slider,
+    Tablet
 } from "./Components";
 
 /*  Constants  */
@@ -26,12 +30,24 @@ export default function App() {
 
     return (
         <div className="App">
-            <Header />
+            <Header setFilters={setFilters} />
             <HighlightedItem currentItem={currentItem} />
-            <Slider title="Trending Movies" items={trendingNow} setCurrentItem={setCurrentItem} />
-            <Slider title="Trending Tv Shows" items={trendingNow} setCurrentItem={setCurrentItem} />
-            <Slider title="New Releases" items={trendingNow} setCurrentItem={setCurrentItem} />
-            <Slider title="Action Movies" items={trendingNow} setCurrentItem={setCurrentItem} />
+            
+            {filters !== "tv" && (
+                <Slider title="Trending Movies" items={trendingNow} setCurrentItem={setCurrentItem} />
+            )}
+
+            {filters !== "movies" && (
+                <Slider title="Trending Tv Shows" items={trendingNow} setCurrentItem={setCurrentItem} />
+            )}
+
+            {filters === "default" && (
+                <Slider title="New Releases" items={trendingNow} setCurrentItem={setCurrentItem} />
+            )}
+
+            {filters !== "tv" && (
+                <Slider title="Action Movies" items={trendingNow} setCurrentItem={setCurrentItem} />
+            )}
         </div>
     );
 }

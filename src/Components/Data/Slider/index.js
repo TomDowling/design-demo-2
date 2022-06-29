@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
 
+/*  Components  */
+import {
+    deviceCheck
+} from "../../../Components";
+
 export function Slider(props) {
     const {
         items,
@@ -9,6 +14,14 @@ export function Slider(props) {
 
     const [itemsPerRow, setItemsPerRow] = useState(4);
     const [currentRow, setCurrentRow] = useState(1);
+
+    useEffect(() => {
+        if (deviceCheck() === "mobile") {
+            setItemsPerRow(1);
+        } else if (deviceCheck() === "tablet") {
+            setItemsPerRow(2);
+        }
+    }, [])
 
     const goBack = () => {
         setCurrentRow(currentRow - 1);
