@@ -1,21 +1,17 @@
-import React, { useEffect, useState } from "react";
-
-
+import React, { useState } from "react";
 
 /*  RENDER  */
 export function Header(props) {
-    const {
-        setFilters
-    } = props;
+    const { setFilters } = props;
     const [showDropdown, setShowDropdown] = useState(false);
 
     const toggleDropdown = () => {
-        setShowDropdown((prevCheck) => !prevCheck)
-    }
+        setShowDropdown((prevCheck) => !prevCheck);
+    };
 
     const changeFilter = (newValue) => {
-        setFilters(newValue)
-    }
+        setFilters(newValue);
+    };
 
     return (
         <header>
@@ -25,18 +21,13 @@ export function Header(props) {
                     onClick={toggleDropdown}
                 />
 
-                <ul
-                    className="main-menu desktop-only"
-                >
+                <ul className="main-menu desktop-only">
                     <li onClick={() => changeFilter("movies")}>Movies</li>
                     <li onClick={() => changeFilter("tv")}>Tv Shows</li>
                     <li onClick={() => changeFilter("default")}>Directories</li>
                 </ul>
 
-                <div
-                    className="logo"
-                    onClick={() => alert("Home")}
-                />
+                <div className="logo" onClick={() => alert("Home")} />
 
                 <div
                     className="notifications"
@@ -44,7 +35,9 @@ export function Header(props) {
                 />
             </div>
 
-            <ul className={`dropdown-menu mobile-only ${showDropdown ? "" : "hide"}`}>
+            <ul
+                className={`dropdown-menu mobile-only ${showDropdown ? "" : "hide"}`}
+            >
                 <li>Movies</li>
                 <li>Tv Shows</li>
                 <li>Directories</li>
@@ -53,5 +46,5 @@ export function Header(props) {
                 <li className="login">Login</li>
             </ul>
         </header>
-    )
+    );
 }

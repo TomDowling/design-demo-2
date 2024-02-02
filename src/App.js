@@ -1,15 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 /*  Components  */
-import {
-    Desktop,
-    Header,
-    HighlightedItem,
-    Mobile,
-    Responsive,
-    Slider,
-    Tablet,
-} from "./Components";
+import { Header, HighlightedItem, Slider } from "./Components";
 
 /*  Constants  */
 import { trendingNow } from "./Constants/Categories/trendingNow";
